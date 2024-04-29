@@ -11,15 +11,14 @@ html {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: var(--primary-colour);
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: aliceblue;
   background-color: #040509;
+  color: var(--primary-colour);
 }
 
 .secondary-color {
@@ -79,6 +78,10 @@ nav {
   list-style: none;
 }
 
+.nav--links ul li a {
+  color: var(--primary-colour);
+}
+
 .nav--links ul li a:hover {
   color: var(--secondary-colour);
   border-bottom: 1px solid var(--secondary-colour);
@@ -127,6 +130,7 @@ nav {
   display: inline-block;
   background-color: var(--secondary-colour);
   padding: 10px 20px;
+  color: var(--primary-colour);
 }
 
 /* THE ABOUT SECTION */
@@ -184,6 +188,7 @@ nav {
   display: inline-block;
   background-color: var(--secondary-colour);
   padding: 10px 20px;
+  color: var(--primary-colour);
 }
 
 /* OUR MENU */
@@ -224,9 +229,9 @@ nav {
   padding: 50px;
 }
 
-.menu--item:hover {
-  background-color: cadetblue;
-  color: black;
+.menu-container .menu--inner .menu--item:hover {
+  background-color: var(--primary-colour);
+  color: black !important;
 }
 
 .menu--price {
@@ -251,6 +256,7 @@ nav {
   display: inline-block;
   background-color: var(--secondary-colour);
   padding: 10px 20px;
+  color: var(--primary-colour);
 }
 
 /* OUR PRODUCTS */
@@ -270,28 +276,32 @@ nav {
 
 .product--content {
   width: 90%;
-  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .product--items {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   border: 1px solid var(--primary-colour);
+  padding: 20px;
 }
 
-.product--icons {
-}
+/* .product--icons {
+} */
 
 .product--icons .product--icons-box {
   border: 1px solid var(--primary-colour);
   padding: 10px;
 }
 
-.product--picture {
-}
+/* .product--picture {
+} */
 
 .product--stars {
+  color: var(--secondary-colour);
 }
 
 .product--prices {
@@ -309,4 +319,62 @@ nav {
 .product--prices .product--old-price {
   font-size: 14px;
   text-decoration: line-through;
+}
+
+/* REVIEW SECTION */
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.review-container h2 {
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+.review--content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review--list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  border: 1px solid var(--primary-colour);
+  padding: 30px 20px;
+}
+
+.review--list p {
+  line-height: 1.5;
+}
+
+.review--list h4 {
+  text-transform: capitalize;
+}
+
+/* .review--content-quote {
+} */
+
+/* .review--content-quote img {
+} */
+
+.review--profile-image {
+  width: 100%;
+}
+
+.review--profile-image img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.review--stars {
+  color: var(--secondary-colour);
 }
