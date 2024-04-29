@@ -100,6 +100,10 @@ nav {
   font-size: 25px;
 }
 
+.nav--icon #hamburger-icon {
+  display: none;
+}
+
 /* THE HERO SECTION */
 
 .hero-section {
@@ -398,7 +402,6 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  display: none;
 }
 
 .contact--inner {
@@ -408,22 +411,71 @@ nav {
   align-items: center;
 }
 
+.contact--inner h2 {
+  text-transform: uppercase;
+  margin: 30px;
+}
+
 .contact--content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  /* align-items: center; */
 }
 
 .contact--map {
+  width: 100%;
+  background-color: #13131a;
+}
+
+.contact--map img {
   width: 100%;
 }
 
 .contact--form {
   width: 100%;
+  background-color: #13131a;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 0px 30px;
+  text-align: center;
 }
 
+.contact--form h2 {
+  text-transform: uppercase;
+}
+
+.contact--form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form--input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #040509;
+  padding: 12px 20px;
+  border: 1px solid var(--primary-colour);
+}
+
+.form--input input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--primary-colour);
+}
+
+.contact--form .hero--button {
+  text-transform: capitalize;
+  display: inline-block;
+  background-color: var(--secondary-colour);
+  padding: 10px 20px;
+  color: var(--primary-colour);
+}
 /* OUR BLOG SECTION */
 
 .blog-container {
