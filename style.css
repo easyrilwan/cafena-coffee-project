@@ -42,6 +42,11 @@ h4 {
   font-size: 16px;
 }
 
+h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
 /* THE HEADER SECTION */
 header {
   width: 100%;
@@ -377,4 +382,96 @@ nav {
 
 .review--stars {
   color: var(--secondary-colour);
+}
+
+/* THE CONTACT SECTION */
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.contact--inner {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.contact--map {
+  width: 100%;
+}
+
+.contact--form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* OUR BLOG SECTION */
+
+.blog-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-container h2 {
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+.blog-container {
+}
+
+.blog--content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blog--item {
+  border: 1px solid var(--primary-colour);
+}
+
+.blog--img {
+  width: 100%;
+}
+
+.blog--img img {
+  width: 100%;
+}
+
+.blog--text {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog--text h4 {
+  color: var(--secondary-colour);
+}
+
+.blog--text p {
+  line-height: 1.5;
+}
+
+.blog--item .hero--button {
+  text-transform: capitalize;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: var(--secondary-colour);
+  padding: 10px 20px;
+  color: var(--primary-colour);
 }
