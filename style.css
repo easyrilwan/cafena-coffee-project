@@ -98,6 +98,11 @@ nav {
   align-items: center;
   gap: 20px;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.nav--icon > div:hover {
+  color: var(--secondary-colour);
 }
 
 .nav--icon #hamburger-icon {
@@ -630,8 +635,8 @@ nav {
     width: 100%;
   }
 
-  .hero-section p {
-  }
+  /* .hero-section p {
+  } */
 
   /* THE ABOUT SECTION */
 
