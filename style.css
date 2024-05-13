@@ -421,6 +421,7 @@ nav {
 .contact--inner h2 {
   text-transform: uppercase;
   margin: 30px;
+  text-align: center;
 }
 
 .contact--content {
@@ -450,7 +451,6 @@ nav {
 
 .contact--form h2 {
   text-transform: uppercase;
-  text-align: center;
 }
 
 .contact--form form {
