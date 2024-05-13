@@ -450,6 +450,7 @@ nav {
 
 .contact--form h2 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .contact--form form {
@@ -701,6 +702,10 @@ nav {
   /* THE HEADER SECTION */
 
   /* THE HERO SECTION */
+
+  .hero-section .hero--text {
+    gap: 5px;
+  }
 
   /* THE ABOUT SECTION */
 
