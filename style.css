@@ -101,11 +101,15 @@ nav {
   cursor: pointer;
 }
 
-.nav--icon > div:hover {
+.nav--icon > *:hover {
   color: var(--secondary-colour);
 }
 
 .nav--icon #hamburger-icon {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
@@ -617,6 +621,38 @@ nav {
   }
   .nav--icon #hamburger-icon {
     display: block;
+  }
+
+  .nav--links-2 {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav--links-2 ul {
+    list-style: none;
+    background-color: #13131a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    position: absolute;
+    height: 70vh;
+    width: 50vw;
+    right: 0;
+
+    font-size: 30px;
+  }
+
+  .nav--links-2 ul li a {
+    text-decoration: none;
+    color: var(--secondary-colour);
+  }
+
+  .nav--links-2 ul li a:active {
+    color: var(--primary-colour);
   }
 
   /* THE HERO SECTION */
